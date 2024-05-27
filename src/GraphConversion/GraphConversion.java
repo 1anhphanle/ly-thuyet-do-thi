@@ -145,8 +145,8 @@ public class GraphConversion {
         List<Edge> edgeListFromMatrix = matrixToEdgeList(matrix);
         List<List<Integer>> adjListFromMatrix = matrixToAdjacencyList(matrix);
 
-        writeEdgeListToFile(edgeListFromMatrix, matrix.length, "edgelist_from_matrix.txt");
-        writeAdjacencyListToFile(adjListFromMatrix, "adjlist_from_matrix.txt");
+        writeEdgeListToFile(edgeListFromMatrix, matrix.length, "C:\\Workspace\\lythuyetdothi\\src\\GraphConversion\\edgelist_from_matrix.txt");
+        writeAdjacencyListToFile(adjListFromMatrix, "C:\\Workspace\\lythuyetdothi\\src\\GraphConversion\\adjlist_from_matrix.txt");
 
         // Chuyển đổi từ danh sách cạnh sang ma trận kề và danh sách kề
         List<Edge> edgeList = readEdgeListFromFile("C:\\Workspace\\lythuyetdothi\\src\\GraphConversion\\edgelist.txt");
@@ -154,7 +154,7 @@ public class GraphConversion {
         int[][] matrixFromEdgeList = edgeListToMatrix(edgeList, n);
         List<List<Integer>> adjListFromEdgeList = edgeListToAdjacencyList(edgeList, n);
 
-        writeMatrixToFile(matrixFromEdgeList, "matrix_from_edgelist.txt");
-        writeAdjacencyListToFile(adjListFromEdgeList, "adjlist_from_edgelist.txt");
+        writeMatrixToFile(matrixFromEdgeList, "C:\\Workspace\\lythuyetdothi\\src\\GraphConversion\\matrix_from_edgelist.txt");
+        writeAdjacencyListToFile(adjListFromEdgeList, "C:\\Workspace\\lythuyetdothi\\src\\GraphConversion\\adjlist_from_edgelist.txt");
     }
 }
